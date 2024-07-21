@@ -1,3 +1,5 @@
+import logging
+
 def extract_data():
     try:
         print("Extracting data from source")
