@@ -4,3 +4,4 @@ sqlalchemy==1.4.25
 psycopg2-binary==2.9.1
 apache-airflow==2.2.3
 great-expectations==0.13.26
+great-expectations==0.13.26
