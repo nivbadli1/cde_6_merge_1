@@ -5,26 +5,28 @@ logger = logging.getLogger(__name__)
 
 def extract_data():
     try:
-        print("Extracting data from source")
+        logger.info("Extracting data from source")
     except Exception as e:
-        print(f"Error in extraction: {e}")
+        logger.error(f"Error in extraction: {e}")
 
 def transform_data():
     try:
-        print("Transforming data")
+        logger.info("Transforming data")
     except Exception as e:
-        print(f"Error in transformation: {e}")
+        logger.error(f"Error in transformation: {e}")
 
 def load_data():
     try:
-        print("Loading data to destination")
+        logger.info("Loading data to destination")
     except Exception as e:
-        print(f"Error in loading: {e}")
+        logger.error(f"Error in loading: {e}")
 
 def main():
+    logger.info("Starting ETL pipeline")
     extract_data()
     transform_data()
     load_data()
+    logger.info("ETL pipeline completed")
 
 if __name__ == "__main__":
     main()
