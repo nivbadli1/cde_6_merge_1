@@ -3,6 +3,11 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+def validate_data(data):
+    logger.info("Validating data")
+    # Add your validation logic here
+    return True
+
 def extract_data():
     try:
         logger.info("Extracting data from source")
